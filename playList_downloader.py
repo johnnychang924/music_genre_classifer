@@ -10,5 +10,5 @@ for video in pl.videos:
     mp3 = mp3.order_by('abr').desc().first()
     print("downloading: ", video.title)
     mp3.download(address + '\\' + genre_name)
-    path = address + '\\' + genre_name + '\\' + video.title
-    subprocess.run(f'ffmpeg -i "{path}.mp4" "{path}.mp3"',shell=True, capture_output=True)
+    #path = address + '\\' + genre_name + '\\' + video.title
+    #subprocess.run(f'ffmpeg -i "{path}.mp4" "{path}.mp3"',shell=True, capture_output=True)
